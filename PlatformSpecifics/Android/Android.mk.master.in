@@ -1,0 +1,10 @@
+#ANDROID ROOT MAKEFILE
+OSG_ROOT := $(call my-dir)
+LOCAL_PATH := $(call my-dir)
+OSG_ROOT := $(LOCAL_PATH)
+OSGInclude :=   $(OSG_ROOT)/src/osgEarth \
+                $(OSG_ROOT)/src/osgEarthAnnotation \
+		$(OSG_ROOT)/src/osgEarthFeatures \
+		$(OSG_ROOT)/src/osgEarthSymbology \
+		$(OSG_ROOT)/src/osgEarthUtil
+include src/Android.mk
