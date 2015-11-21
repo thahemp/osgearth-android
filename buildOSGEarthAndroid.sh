@@ -3,7 +3,7 @@
 # This must match the path to your osg-android build
 BASE_PATH=/home/erk/GIT-repos/osg-android
 
-mkdir build && cd build
+mkdir -p build && cd build
 
 cmake .. \
 -DOSG_DIR:PATH="$BASE_PATH/osg-android" \
